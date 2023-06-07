@@ -1,0 +1,60 @@
+<div class="container container-turmas" id="container-turmas">
+    <div class="container_topo">
+        <div class="nome_buttons">
+            <p>Turmas</p>
+            <div class="adicionar_editar_deletar">
+                <a class="fas fa-plus" href="#modal__adicionar"></a>
+            </div>
+        </div>
+        <div class="linha"></div>
+    </div>
+    <div id="modal__adicionar" class="modal__adicionar">
+        <form class="modal__adicionar--content" id="modal__adicionar--content">
+            <p>Adicionar um Turma</p>
+            <div class="input__nome">
+                <label for="">Nome da Turma:</label>
+                <input type="text" name="nome" id="" maxlength="45" style="width: 100%;" required>
+            </div>
+            <div class="input__sigla">
+                <label for="">Sigla da Turma:</label>
+                <input type="text" name="sigla" id="" maxlength="8" style="width: 100%;" required>
+            </div>
+            <div class="input__descricao">
+                <label for="">Descrição da Turma:</label>
+                <input type="text" name="descricao" id="" style="width: 100%;" required>
+            </div>
+            <div class="data_inicio_termino">
+                <div class="input__data--inicio">
+                    <label for="">Data Inicio:</label>
+                    <input type="date" name="data_inicio" id="" required>
+                </div>
+                <div class="input__data--termino">
+                    <label for="">Data Termino:</label>
+                    <input type="date" name="data_termino" id="" required>
+                </div>
+            </div>
+            <div class="semestres">
+                <label for="">Semestre da Turma:</label>
+                <input type="radio" id="under_13" value="1" name="user_age">
+                <label for="1" class="light">1</label>
+                <input type="radio" id="under_13" value="2" name="user_age">
+                <label for="2" class="light">2</label>
+                <input type="radio" id="under_13" value="3" name="user_age">
+                <label for="3" class="light">3</label>
+                <input type="radio" id="under_13" value="4" name="user_age">
+                <label for="4" class="light">4</label>
+            </div>
+            <div class="modal__adicionar--footer">
+                <a type="submit" id="salvarBtn">Salvar</a>
+            </div>
+            <a href="#" class="modal__adicionar--close">&times;</a>
+        </form>
+    </div>
+    <div class="cards_turmas">
+        <!-- <div class="card_turmas">
+            <h1>DS2T</h1>
+            <span>2º Semestre</span>
+            <span>06/2023</span>
+        </div> -->
+    </div>  
+</div>

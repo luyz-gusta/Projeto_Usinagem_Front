@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- LINK DO GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+
+    <!-- Link do FontAwesome -->
+    <script src="https://kit.fontawesome.com/30058942d9.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/aluno.css">
+
+    <!-- COMPONENTS -->
+    <script src="../components/header.js" defer type="module"></script>
+
+    <!-- <script src="../js/materia.js" defer type="module"></script>
+    <script src="../js/areaAluno.js" defer type="module"></script>
+<script src="../js/relatorio.js" defer type="module"></script> -->
+    <script src="../js/horario.js" defer type="module"></script>
+    <script src="../js/app.js" defer type="module"></script>
+    <title>HORARIO</title>
+</head>
+
+<body>
+    <!-- <header></header> -->
+    <header-padrao color_top="#3084B4" color_button="#DA251C" text_button="VOLTAR"
+        link_button="../index.html"></header-padrao>
+    <nav>
+        <ul class="busca">
+            <a href="./materiaIndex.html" class="materia">
+                Matéria
+            </a>
+            <a href="./areaAlunoIndex.html" class="areaAluno">
+                Área do Aluno
+            </a>
+            <a href="./horarioIndex.html" class="horario">
+                Horário
+            </a>
+            <a href="./relatorioIndex.html" class="relatorio">
+                Relatório
+            </a>
+        </ul>
+    </nav>
+    <main id="root_aluno">
+        <div class="container container-horario" id="container-horario">
+            <div class="container_topo">
+                <div class="nome_buttons">
+                    <p>Horário</p>
+                    <div class="adicionar_editar_deletar">
+                        <button class="fas fa-plus"></button>
+                        <button class="far fa-edit"></button>
+                        <button class="fas fa-trash"></button>
+                    </div>
+                </div>
+                <div class="linha"></div>
+            </div>
+            <div class="horarios">
+                <li>Data</li>
+                <li>Início</li>
+                <li>Término</li>
+                <li>Desconto</li>
+                <li>Líquido</li>
+                <li>Total Geral</li>
+            </div>
+            <div class="dados">
+                <div class="data">
+                    <label class="fas fa-calendar-alt" for="date_input" id="label_calendar"> </label>
+                    <input type="date" class="date_input" id="date_input" />
+                </div>
+                <div class="inicio">
+                    <label class="fas fa-clock label_time" for="time_input" id="label_time1"> </label>
+                    <input type="time" class="time_input" id="time_input" />
+                </div>
+                <div class="termino">
+                    <label class="fas fa-clock label_time" for="time_input" id="label_time1"> </label>
+                    <input type="time" class="time_input" id="time_input" />
+                </div>
+                <div class="desconto">
+                    <label class="fas fa-clock" for="time_input" id="label_time" class="label_time"> </label>
+                    <input type="time" class="time_input" id="time_input" />
+                </div>
+                <div class="liquido">
+                    <i>1h24</i>
+                </div>
+                <div class="total_geral">
+                    <i>1h24</i>
+                </div>
+            </div>
+            <!-- <div class="linha"></div> -->
+        </div>
+    </main>
+</body>
+
+</html>

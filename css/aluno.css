@@ -1,0 +1,243 @@
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 75px 1fr;
+}
+
+nav {
+    background-color: #3084B4;
+}
+
+.busca {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+.busca a {
+    background-color: #3084B4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+.busca :hover {
+    background-color: #074A71;
+}
+
+#root {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 5vw 8.4vh;
+}
+
+.container-materia {
+    background-color: #eeee;
+}
+
+.container-areaAluno {
+    background-color: #eeee;
+    display: flex;
+    flex-direction: column;
+    gap: 7.2vh;
+}
+
+.container-horario {
+    background-color: #eeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-relatorio {
+    background-color: #eeee;
+}
+
+/* AREA DO ALUNO */
+.container_topo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.container_topo p {
+    color: #074A71;
+}
+
+.linha {
+    background-color: #3084B4;
+    width: 100%;
+    height: 2px;
+}
+
+.cards_turma {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    grid-gap: 46px;
+}
+
+.card {
+    width: 400px;
+    height: 350px;
+    background: #D9D9D9;
+    border: 1px solid #3084B4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 55%;
+    height: 60%;
+}
+
+.card p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+@media (max-width: 999px) {
+
+    /* AREA DO ALUNO */
+    .busca {
+        width: 100%;
+    }
+
+    .cards_turma {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+
+    /* AREA DO ALUNO */
+    .busca a {
+        font-size: 1rem;
+    }
+
+    .container_topo {
+        text-align: center;
+    }
+
+    .container {
+        padding: 5vw 20px;
+    }
+
+    .card {
+        width: 270px;
+        height: 270px;
+    }
+}
+
+
+
+/* HORARIO */
+
+.nome_buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.adicionar_editar_deletar button {
+    color: white;
+    background-color: #3084B4;
+    padding: 10px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.horarios {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 67px;
+    border-bottom: 2px solid rgba(48, 132, 180, 0.5);
+}
+
+.dados {
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 20px 10px;
+    border-bottom: 2px solid rgba(48, 132, 180, 0.5);
+}
+
+.data {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inicio {
+    padding-left: 10vw;
+}
+
+.termino {
+    padding-left: 11vw;
+}
+
+.desconto {
+    padding-left: 13vw;
+}
+
+.liquido {
+    padding-left: 12vw;
+}
+
+.total_geral {
+    padding-left: 15vw;
+}
+
+#label_calendar{
+    z-index: 1;
+}
+label{
+    cursor: pointer;
+}
+
+.date_input{
+    opacity: 0;
+}
+
+.time_input{
+    opacity: 0;
+}
